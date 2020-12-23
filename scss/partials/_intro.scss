@@ -1,0 +1,56 @@
+// Styling for the intro section
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1360px;
+  margin-top: 5rem;
+  margin-left: 14rem;
+  height: 80vh;
+
+  &--img {
+    height: 629px;
+    width: 629px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4.5rem;
+    margin-left: 1rem;
+
+    &--title {
+      position: relative;
+      color: $core--blue;
+      font-size: 56px;
+      font-family: main-bold;
+      width: 90%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 13rem;
+        left: 0;
+        height: 10px;
+        width: 290px;
+        background: $primary-green;
+        z-index: -1;
+      }
+    }
+
+    &--text {
+      color: $core--blue;
+      font-size: 22px;
+      font-family: main-reg;
+      width: 90%;
+      margin-bottom: 4rem;
+    }
+
+    &--cta {
+      a {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.header {
+  width: 100%;
+
+  // Styling for the top part of the header
+  &__top {
+    background-color: $core--grey;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &--content {
+      width: 1360px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--nav {
+      font-size: 20px;
+      font-family: main-bold;
+      color: $core--blue;
+      margin-left: -4.5rem;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        padding: 0;
+
+        a {
+          padding: 0 2em;
+          display: inline-block;
+        }
+      }
+    }
+
+    &--cta {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  // Styling for the bottom part of the header
+  &__bottom {
+    background-color: $white;
+    height: 145px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &--content {
+      width: 1920px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &--nav {
+      font-size: 20px;
+      font-family: main-bold;
+      color: $primary--blue;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        margin-right: 1em;
+        padding: 0;
+
+        a {
+          padding: 0 2em;
+          display: inline-block;
+        }
+      }
+    }
+    &--logo {
+      svg {
+        height: 102px;
+        width: 200px;
+        margin-right: 5rem;
+      }
+    }
+  }
+}

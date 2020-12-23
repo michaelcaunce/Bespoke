@@ -1,0 +1,28 @@
+// Styling for the hero section
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+  position: relative;
+
+  &__video--container {
+    img {
+      width: 1360px;
+    }
+  }
+
+  ::after {
+    content: url("../../assets/images/circle-bg.png");
+    height: 800px;
+    position: absolute;
+    right: -25rem;
+    top: 15rem;
+    z-index: -1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
